@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa de Satisfação</title>
+    </head>
+    <body>
+        <h1>Pesquisa de Satisfação</h1>        
+        <form action="pagina-destino.html" method="post">
+        <section>
+            <h2>Dados pessoais</h2>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Seu nome" id="nome" />
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Seu e-mail" id="email" />
+            </p>
+            <p>
+                <label for="telefone">Contato:</label>
+                <input type="number" placeholder="Seu número de telefone" id="telefone" />
+            </p>
+        </section>
+        <section>
+        <h2>Pesquisa</h2>
+            <p>
+                Você gostou do nosso atendimento?
+                <input type="radio" id="sim" name="atendimento" />
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="atendimento" />
+                <label for="nao">Não</label>
+            </p>
+            <p>
+                Como você avalia o atendimento?
+                <input type="radio" id="otimo" name="avaliacao" />
+                <label for="otimo">Ótimo</label>
+                <input type="radio" id="bom" name="avaliacao" />
+                <label for="nao">Bom</label>
+                <input type="radio" id="regular" name="avaliacao" />
+                <label for="regular">Regular</label>
+                <input type="radio" id="ruim" name="avaliacao" />
+                <label for="ruim">Ruim</label>
+                <input type="radio" id="pessimo" name="avaliacao" />
+                <label for="pessimo">Péssimo</label>
+            </p>
+            <p>
+                Você indicaria nossa empresa para outras pessoas?
+            <select>
+                <option>Sim</option>
+                <option>Não</option>
+                <option>Talvez</option>
+            </select>
+            </p>
+            <p>
+                <input type="checkbox" id="autorizacao"/>
+                <label for="checkbox">Autorizo o compartilhamento das minhas respostas com terceiros.</label>            
+            </p>
+        </section>
+        <input type="submit" value="Enviar respostas" />
+        </form>
+    </body>
+</html>
